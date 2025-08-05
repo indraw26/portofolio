@@ -1,27 +1,20 @@
-import background1 from "@assets/background.jpeg";
+import homeBackground from "@assets/homeBackground.jpg";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleNavigateAbout = () => {
+    navigate(`/about`);
+  };
+
   return (
-    <>
-      <nav className="font-lato-regular text-white">
-        <div className="container flex mx-auto justify-between items-center bg-red-500 px-2 py-5 pl-12 pr-2">
-          <span className="text-md">Indra Wijaya</span>
-          <div className="flex gap-10 text-md">
-            <a className="inline-block transition-transform duration-200 hover:-translate-y-1 hover:text-gray-300" href="#home">
-              Home
-            </a>
-            <a className="inline-block transition-transform duration-200 hover:-translate-y-1 hover:text-gray-300" href="#about">
-              About
-            </a>
-            <a className="inline-block transition-transform duration-200 hover:-translate-y-1 hover:text-gray-300" href="/project">
-              Portofolio
-            </a>
-          </div>
-        </div>
-      </nav>
-      <div id="home" className="container mx-auto min-h-[1200px]">
+    <div>
+      <Navbar/>
+      <div className="container mx-auto min-h-[840px] mt-20" style={{}}>
         <div className="flex flex-col px-4 pt-24 text-center leading-tight text-white">
-          <p className="text-3xl font-bold font-montserrat">
+          <p className="text-3xl font-montserrat-bold">
             Hi, I'm{" "}
             <span
               className="text-secondary text-red-400 drop-shadow-xl inline-block transition-transform duration-200 hover:-translate-y-1"
@@ -43,9 +36,9 @@ const Home = () => {
             </span>{" "}
             from Palembang
           </p>
-          <div className="flex flex-col px-4 py-6 gap-5 text-sm">
+          <div className="flex flex-col px-4 py-6 gap-5 text-md">
             <p className="px-4 sm:px-16 md:px-32 lg:px-64 leading-relaxed font-monserrat">
-              I'm a developer who enjoys turning ideas into functional and
+              I'm a developer who enjoys turning ideas💡 into functional and
               elegant code. I focus on writing clean, <br />
               and I continuously grow through every project, challenge, and line
               I write.
@@ -68,6 +61,8 @@ const Home = () => {
                 (e.currentTarget.style.filter =
                   "drop-shadow(0px 2px 4px rgba(83, 147, 252, 0.8))")
               }
+
+              onClick={handleNavigateAbout}
             >
               More about me
             </button>
@@ -87,8 +82,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id="about">tedhasiudgasoidgsaiodg</div>
-    </>
+    </div>
   );
 };
 

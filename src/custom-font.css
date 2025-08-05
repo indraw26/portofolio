@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'Montserrat';
+  src: url('../src/assets/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
   font-family: 'Roboto';
   src: url('../src/assets/fonts/roboto/regular.ttf');
 }
@@ -20,6 +25,7 @@
 
 @theme {
   --font-montserrat: Montserrat, "sans-serif";
+  --font-montserrat-bold: Montserrat, "sans-serif";
   --font-roboto: Roboto, "sans-serif";
   --font-lato-regular: Lato, "sans-serif";
   --font-lato-bold: Lato, "sans-serif";
