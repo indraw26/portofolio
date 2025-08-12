@@ -1,8 +1,12 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
+  const navigate = useNavigate()
+  const navigateToProject = () => {
+    navigate('/project')
+  }
   return (
     <nav className="font-lato-regular text-white">
       <div
@@ -11,7 +15,7 @@ const Navbar = () => {
           backgroundColor: "#a456db",
         }}
       >
-        <span className="text-xs sm:text-xs md:text-sm lg:text-md">
+        <span className="text-xs sm:text-xs md:text-sm lg:text-md cursor-pointer" onClick={navigateToProject}>
           Indra Wijaya
         </span>
         <div className="flex gap-10 px-4 text-xs sm:text-xs md:text-xs lg:text-sm">
@@ -19,7 +23,7 @@ const Navbar = () => {
             className={`inline-block transition-transform duration-200 hover:-translate-y-1 hover:text-amber-200 ${
               isActive("/") ? "text-amber-200" : ""
             }`}
-            href="/home"
+            href="/"
           >
             Home
           </a>
