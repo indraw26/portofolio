@@ -1,8 +1,5 @@
-import homeBackground from "@assets/homeBackground.jpg";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Maintance from "./maintance";
+import Navbar from "../common/Navbar/Navbar";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,9 +12,9 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className="bg-black/40">
       <Navbar />
-      <div className="container mx-auto min-h-[840px] mt-20" style={{}}>
+      <div className="container mx-auto min-h-screen mt-20" style={{}}>
         <div className="flex flex-col px-4 pt-24 text-center leading-tight text-white">
           <p className="text-3xl font-montserrat-bold">
             Hi, I'm{" "}

@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../common/Navbar/Navbar";
 import Maintance from "./maintance";
 
 const Project = () => {

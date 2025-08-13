@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../common/Navbar/Navbar";
 
 const Maintance = () => {
   const navigate = useNavigate()
