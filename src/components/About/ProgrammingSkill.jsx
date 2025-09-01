@@ -10,11 +10,11 @@ const Skill = () => {
   };
 
   const colorClasses = {
-    blue: "text-blue-300",
-    yellow: "text-yellow-300",
-    purple: "text-purple-300",
-    green: "text-green-300",
-    red: "text-red-300",
+    blue: "text-white",
+    yellow: "text-white",
+    purple: "text-white",
+    green: "text-white",
+    red: "text-white",
   };
 
   const flatSkills = Object.entries(skills).flatMap(([color, items]) =>
@@ -22,7 +22,7 @@ const Skill = () => {
   );
 
   return (
-    <div className="py-4 px-10 text-white mb-2 space-y-2">
+    <div className="py-2 px-10 text-white mb-2 space-y-2">
       <h3 className="text-xl font-lato-bold">Programming Skills</h3>
       <Underscore style={"w-43"} />
       <p>

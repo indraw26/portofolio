@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-black/40 px-4rounded-lg text-white w-full min-h-screen font-lato-regular">
+      <div className="bg-black/40 px-4 rounded-lg text-white w-full min-h-screen font-lato-regular py-15">
         <div className="py-8 flex flex-col mx-auto items-center">
           <div className="bg-black/60">
             <AboutMe/>

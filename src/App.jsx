@@ -3,7 +3,7 @@ import Home from './pages/home';
 // import About from './pages/about';
 import Maintance from './pages/maintance';
 import About from './pages/about';
-import Project from './pages/projects';
+import Project from './pages/project';
 function App() {
   return (
     <>

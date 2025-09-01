@@ -9,7 +9,6 @@ const Maintance = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <div className="bg-white font-sans min-h-screen flex justify-center items-center">
         <main className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto px-8 py-16">
           <section>

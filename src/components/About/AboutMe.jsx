@@ -1,6 +1,5 @@
 import profile from "@assets/images/about.jpg";
 const AboutMe = () => {
-
   return (
     <div>
       <h2 className="text-2xl font-bold mb-2 text-center pt-4">About Me</h2>
@@ -13,8 +12,10 @@ const AboutMe = () => {
 
         <div className="text-left max-w-100 mr-20">
           <p className="text-xl">
-            Hi, I'm Indra — a Software Engineer who focused on efficiency, clean
-            code, and problem-solving to create impactful digital solutions.
+            Hi, I'm Indra — a Software Engineer passionate about web
+            development, databases, and information systems. I’m a communicative
+            and adaptable person and problem-solving to create impactful digital
+            solutions.
           </p>
         </div>
       </div>

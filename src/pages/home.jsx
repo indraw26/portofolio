@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className="bg-black/40">
       <Navbar />
-      <div className="container mx-auto min-h-screen mt-20" style={{}}>
+      <div className="container mx-auto min-h-screen py-26">
         <div className="flex flex-col px-4 pt-24 text-center leading-tight text-white">
           <p className="text-3xl font-montserrat-bold">
             Hi, I'm{" "}
@@ -40,8 +40,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col px-4 py-6 gap-5 text-md">
             <p className="px-4 sm:px-16 md:px-32 lg:px-64 leading-relaxed font-monserrat">
-              I'm a developer who enjoys turning ideas💡 into functional and
-              elegant code. I focus on writing clean, <br />
+              I'm a developer who enjoys to learn new technology. I focus on writing clean, <br />
               and I continuously grow through every project, challenge, and line
               I write.
             </p>

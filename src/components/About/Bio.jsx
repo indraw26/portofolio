@@ -8,7 +8,7 @@ const Bio = () => {
     <div className="py-4 px-10 text-white mb-2">
       <div className="text-xl font-lato-bold">
         <h3 className="font-lato-bold">Bio</h3>
-        <Underscore style={"w-8"}/>
+        <Underscore style={"w-8"} />
       </div>
 
       <div className="mt-2 space-y-2">
@@ -20,7 +20,7 @@ const Bio = () => {
           <p className="text-md font-medium">2018-2021</p>
           <p className="text-md">
             : Graduate from{" "}
-            <span className="text-purple-300">YPI Tunas Bangsa Palembang</span>{" "}
+            <span className="text-sky-300">YPI Tunas Bangsa Palembang</span>{" "}
             Higschool, with a majoin in{" "}
             <span className="font-bold">social sciences</span>.
           </p>
@@ -31,9 +31,9 @@ const Bio = () => {
           </p>
           <p className="text-md">
             : Graduate with a bachelor degree in{" "}
-            <span className="text-purple-300">Information Systems </span>
+            <span className="text-sky-300">Information Systems </span>
             from{" "}
-            <span className="text-purple-300">
+            <span className="text-sky-300">
               University Multi Data Palembang
             </span>{" "}
           </p>
@@ -42,7 +42,7 @@ const Bio = () => {
           <p className="text-md font-medium">2024, Feb - Juni</p>
           <p className="text-md">
             : Internship at{" "}
-            <span className="text-purple-300">
+            <span className="text-sky-300">
               RSUP dr. Mohammad Hoesin Palembang
             </span>{" "}
             as a Full Stack developer
