@@ -14,18 +14,18 @@ const Navbar = () => {
 
   return (
     <nav className="font-lato-regular text-white fixed top-0 left-0 right-0 z-50 animate-[slideDown_0.5s_ease-out]">
-      <div className="glass-effect-dark mx-auto max-w-7xl px-6 py-4 rounded-b-2xl">
+      <div className="glass-effect-dark mx-auto max-w-7xl px-4 sm:px-6 py-3 sm:py-4 rounded-b-2xl">
         <div className="flex justify-between items-center">
           {/* Logo/Name with Animated Gradient */}
           <span
-            className="text-lg md:text-xl font-semibold cursor-pointer transition-all duration-300 hover:scale-105 animated-gradient"
+            className="text-base sm:text-lg md:text-xl font-semibold cursor-pointer transition-all duration-300 hover:scale-105 animated-gradient"
             onClick={() => handleNavigate("Home")}
           >
             Indra Wijaya
           </span>
 
           {/* Navigation Links */}
-          <div className="flex gap-8 text-sm md:text-base">
+          <div className="flex gap-3 sm:gap-6 md:gap-8 text-xs sm:text-sm md:text-base">
             {listNavBar.map((item, index) => {
               const path = item === "Home" ? "/" : `/${item.toLowerCase()}`;
               const active = isActive(path);
@@ -35,7 +35,7 @@ const Navbar = () => {
                   key={index}
                   onClick={() => handleNavigate(item)}
                   className={`
-                    relative px-4 py-2 rounded-lg cursor-pointer
+                    relative px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-lg cursor-pointer
                     transition-all duration-300 ease-in-out
                     hover:bg-red-400/10
                     ${active ? 'text-red-400' : 'text-white/90'}

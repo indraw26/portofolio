@@ -13,5 +13,13 @@ export default defineConfig({
     alias: {
       "@assets": path.resolve("./src/assets")
     }
-  }
+  },
+  server: {
+    port: 3000,
+    strictPort: true,
+    host: '192.168.18.21',
+    hmr: {
+      port: 3001,
+    },
+  },
 })
