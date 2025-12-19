@@ -2,15 +2,53 @@
 @import "./custom-font.css";
 @import "./custom-theme.css";
 
+:root {
+  /* Red-Purple Cyberpunk Palette */
+  --cyber-red: #ff0055;
+  --cyber-purple: #aa00ff;
+  --cyber-pink: #ff006e;
+  --cyber-violet: #8b00ff;
+  --cyber-dark: #0a0e27;
+  --cyber-darker: #050816;
+
+  /* Red-Purple Gradients */
+  --gradient-primary: linear-gradient(135deg, #ff0055 0%, #aa00ff 100%);
+  --gradient-secondary: linear-gradient(135deg, #ff006e 0%, #8b00ff 100%);
+  --gradient-accent: linear-gradient(135deg, #aa00ff 0%, #ff0055 100%);
+
+  /* Glass Effects */
+  --glass-bg: rgba(10, 14, 39, 0.4);
+  --glass-border: rgba(255, 0, 85, 0.2);
+
+  /* Subtle Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
   position: relative;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #050816;
 }
 
+/* Red-Purple Gradient Background */
 body::before {
   content: "";
   position: fixed;
@@ -18,7 +56,21 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(32deg,rgba(78, 101, 255, 1) 28%, rgba(146, 239, 253, 1) 73%);
-  filter: blur(5px);
+  background: linear-gradient(135deg, #050816 0%, #1a0a1e 50%, #050816 100%);
+  z-index: -2;
+}
+
+/* Ambient Red-Purple Glow */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 0, 85, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(170, 0, 255, 0.1) 0%, transparent 50%);
   z-index: -1;
+  pointer-events: none;
 }

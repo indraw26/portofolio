@@ -1,21 +1,36 @@
 import profile from "@assets/images/about.jpg";
+
 const AboutMe = () => {
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-2 text-center pt-4">About Me</h2>
-      <div className="border-b-4 border-gray-100 w-28 mx-auto mb-6"></div>
+    <div className="text-white animate-[slideUp_0.6s_ease-out]">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center animate-[float_3s_ease-in-out_infinite]">
+        <span className="animated-gradient">
+          About Me
+        </span>
+      </h2>
+      <div className="w-20 h-1 bg-gradient-to-r from-red-500 to-purple-600 mx-auto mb-10 rounded-full"></div>
 
-      <div className="grid grid-cols-2 md:grid-cols-2 items-center px-2 py-2 rounded-lg">
-        <div className="mx-auto ">
-          <img src={profile} alt="Profile" className="w-80" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Profile Image */}
+        <div className="flex justify-center animate-[scaleIn_0.6s_ease-out_0.2s_backwards]">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-red-500 to-purple-600 rounded-2xl blur-sm opacity-50 group-hover:opacity-75 transition duration-300"></div>
+            <img 
+              src={profile} 
+              alt="Profile" 
+              className="relative w-72 md:w-80 lg:w-96 rounded-2xl shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]" 
+            />
+          </div>
         </div>
 
-        <div className="text-left max-w-100 mr-20">
-          <p className="text-xl">
-            Hi, I'm Indra — a Software Engineer passionate about web
-            development, databases, and information systems. I’m a communicative
-            and adaptable person and problem-solving to create impactful digital
-            solutions.
+        {/* Bio Text */}
+        <div className="text-left space-y-4 animate-[slideUp_0.6s_ease-out_0.3s_backwards]">
+          <p className="text-lg md:text-xl leading-relaxed text-white/90">
+            Hi, I'm <span className="font-semibold text-red-400">Indra</span> — a Software Engineer passionate about web
+            development, databases, and information systems.
+          </p>
+          <p className="text-base md:text-lg leading-relaxed text-white/80">
+            I'm a communicative and adaptable person who loves problem-solving to create impactful digital solutions.
           </p>
         </div>
       </div>

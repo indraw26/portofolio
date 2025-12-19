@@ -1,16 +1,175 @@
 @theme {
-  --animate-pop-up: pop-up 0.5s ease-in-out forwards;
+  --animate-fade-in: fadeIn 0.6s ease-out forwards;
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-slide-down: slideDown 0.5s ease-out forwards;
+  --animate-scale-in: scaleIn 0.4s ease-out forwards;
+  --animate-slide-left: slideLeft 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  --animate-slide-right: slideRight 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-glow-pulse: glowPulse 3s ease-in-out infinite;
+  --animate-gradient: gradientShift 3s ease infinite;
 }
 
-@keyframes pop-up {
-  0% {
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide Left Animation (for page transitions) */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide Right Animation (for back navigation) */
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Float Animation */
+@keyframes float {
+
+  0%,
+  100% {
     transform: translateY(0px);
-    transition: 2s;
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Glow Pulse Animation */
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 8px rgba(255, 0, 85, 0.6)) drop-shadow(0 0 16px rgba(255, 0, 85, 0.4));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 12px rgba(170, 0, 255, 0.8)) drop-shadow(0 0 24px rgba(170, 0, 255, 0.5));
+  }
+}
+
+/* Animated Gradient Shift */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
   }
 
   100% {
-    transform: translateY(-4px);
-    transition: 2s;
+    background-position: 0% 50%;
   }
 }
 
+/* Utility Classes */
+.glass-effect {
+  background: rgba(10, 14, 39, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 0, 85, 0.15);
+}
+
+.glass-effect-dark {
+  background: rgba(5, 8, 22, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 0, 85, 0.2);
+}
+
+.smooth-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 0, 85, 0.2);
+}
+
+/* Text Glow Effects */
+.text-glow-red {
+  text-shadow:
+    0 0 10px rgba(255, 0, 85, 0.8),
+    0 0 20px rgba(255, 0, 85, 0.5);
+}
+
+.text-glow-purple {
+  text-shadow:
+    0 0 10px rgba(170, 0, 255, 0.8),
+    0 0 20px rgba(170, 0, 255, 0.5);
+}
+
+/* Animated Gradient Text */
+.animated-gradient {
+  background: linear-gradient(90deg, #ff0055, #aa00ff, #ff006e, #8b00ff, #ff0055);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+}

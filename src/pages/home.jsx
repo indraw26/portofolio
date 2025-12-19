@@ -1,86 +1,71 @@
 import { useNavigate } from "react-router-dom";
-import Navbar from "../common/Navbar/Navbar";
 
 const Home = () => {
   const navigate = useNavigate();
-  const handleNavigateAbout = () => {
-    navigate(`/about`);
-  };
-
-  const handleNavigateProject = () => {
-    navigate('/project')
-  }
 
   return (
-    <div className="bg-black/40">
-      <Navbar />
-      <div className="container mx-auto min-h-screen py-26">
-        <div className="flex flex-col px-4 pt-24 text-center leading-tight text-white">
-          <p className="text-3xl font-montserrat-bold">
+    <div className="container mx-auto flex items-center justify-center px-4 min-h-screen">
+      <div className="flex flex-col text-center text-white max-w-5xl w-full animate-[fadeIn_0.8s_ease-out]">
+        
+        <div className="mb-12 space-y-6 animate-[slideUp_0.6s_ease-out]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat-bold leading-tight">
             Hi, I'm{" "}
-            <span
-              className="text-secondary text-red-400 drop-shadow-xl inline-block transition-transform duration-200 hover:-translate-y-1"
+            <span 
+              className="inline-block animated-gradient animate-[float_3s_ease-in-out_infinite]"
               style={{
-                textShadow: "4px 2px 2px rgba(239, 68, 68, 0.6)",
+                animation: "float 3s ease-in-out infinite, glowPulse 3s ease-in-out infinite"
               }}
             >
               Indra Wijaya
             </span>
-            !
-            <br />
-            <span
-              className="text-secondary text-sky-400 drop-shadow-xl inline-block transition-transform duration-200 hover:-translate-y-1"
+          </h1>
+          <p className="text-3xl md:text-4xl lg:text-5xl font-montserrat-bold text-white/90">
+            <span 
+              className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent inline-block"
               style={{
-                textShadow: "4px 2px 2px rgba(14, 165, 233, 0.6)",
+                animation: "float 3s ease-in-out infinite 0.5s"
               }}
             >
               Software Engineer
-            </span>{" "}
-            from Palembang
+            </span>
+            {" "}from Palembang
           </p>
-          <div className="flex flex-col px-4 py-6 gap-5 text-md">
-            <p className="px-4 sm:px-16 md:px-32 lg:px-64 leading-relaxed font-monserrat">
-              I'm a developer who enjoys to learn new technology. I focus on writing clean, <br />
-              and I continuously grow through every project, challenge, and line
-              I write.
-            </p>
-            <p className="px-4 sm:px-16 md:px-32 lg:px-64 leading-relaxed font-monserrat">
-              So, that's our small chat. You've been here looking through my
-              website. Let me spill the tea 🍵.
-              <br /> Welcome to my art-work and don't hesitate to discover more
-              thing about me 🙂.
-            </p>
-          </div>
-          <div className="flex gap-2 mx-auto items-center justify-between">
-            <button
-              className="bg-blue-400 py-2 px-4 rounded-md font-lato-regular text-sm transition-all duration-300 hover:-translate-y-1"
-              onClick={handleNavigateAbout}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.filter =
-                  "drop-shadow(0px 6px 12px rgba(83, 147, 252, 0.8))")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.filter =
-                  "drop-shadow(0px 2px 4px rgba(83, 147, 252, 0.8))")
-              }
-            >
+        </div>
+
+        <div className="space-y-6 mb-12 max-w-3xl mx-auto animate-[slideUp_0.6s_ease-out_0.2s_backwards]">
+          <p className="text-lg md:text-xl leading-relaxed font-lato-regular text-white/80">
+            I'm a developer who enjoys learning new technology. I focus on writing clean code, 
+            and I continuously grow through every project, challenge, and line I write.
+          </p>
+          <p className="text-base md:text-lg leading-relaxed font-lato-regular text-white/70">
+            Welcome to my portfolio. Feel free to explore my work and learn more about me.
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-[slideUp_0.6s_ease-out_0.4s_backwards]">
+          <button
+            className="group px-8 py-4 rounded-xl font-lato-regular text-base transition-all duration-300 hover:scale-105 glass-effect border border-red-500/30 hover:border-red-500/50 min-w-[200px] cursor-pointer"
+            onClick={() => navigate('/about')}
+          >
+            <span className="text-red-400 group-hover:text-red-300 flex items-center justify-center gap-2">
               More about me
-            </button>
-            <button
-              className="bg-red-400 py-2 px-4 rounded-md font-lato-regular text-sm transition-all duration-300 hover:-translate-y-1"
-              onClick={handleNavigateProject}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.filter =
-                  "drop-shadow(0px 2px 12px rgba(246, 72, 59, 0.8))")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.filter =
-                  "drop-shadow(0px 2px 4px rgba(246, 72, 59, 0.8))")
-              }
-            >
-              Work Result
-            </button>
-          </div>
+              <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </button>
+          
+          <button
+            className="group px-8 py-4 rounded-xl font-lato-regular text-base transition-all duration-300 hover:scale-105 glass-effect border border-purple-500/30 hover:border-purple-500/50 min-w-[200px] cursor-pointer"
+            onClick={() => navigate('/project')}
+          >
+            <span className="text-purple-400 group-hover:text-purple-300 flex items-center justify-center gap-2">
+              View Projects
+              <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </div>
