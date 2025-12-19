@@ -1,7 +1,7 @@
 const Project = () => {
   return (
-    <div className="container mx-auto my-24">
-      <div className="max-w-6xl mx-auto glass-effect-dark rounded-3xl p-8 md:p-12 animate-[fadeIn_0.8s_ease-out]">
+    <div className="container mx-auto my-24 px-6">
+      <div className="max-w-7xl mx-auto glass-effect-dark rounded-3xl p-8 md:p-12 animate-[fadeIn_0.8s_ease-out]">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-[float_3s_ease-in-out_infinite]">
             <span className="animated-gradient">

@@ -4,8 +4,8 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto flex items-center justify-center px-4 min-h-screen">
-      <div className="flex flex-col text-center text-white max-w-5xl w-full animate-[fadeIn_0.8s_ease-out]">
+    <div className="container mx-auto flex items-center justify-center px-6 min-h-screen">
+      <div className="flex flex-col text-center text-white max-w-7xl w-full animate-[fadeIn_0.8s_ease-out]">
         
         <div className="mb-12 space-y-6 animate-[slideUp_0.6s_ease-out]">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat-bold leading-tight">
