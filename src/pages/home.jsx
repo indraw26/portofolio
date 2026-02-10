@@ -21,7 +21,7 @@ const Home = () => {
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-montserrat-bold text-white/90">
             <span 
-              className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent inline-block"
+              className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent inline-block"
               style={{
                 animation: "float 3s ease-in-out infinite 0.5s"
               }}
@@ -44,10 +44,10 @@ const Home = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-[slideUp_0.6s_ease-out_0.4s_backwards]">
           <button
-            className="group px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-lato-regular text-sm sm:text-base transition-all duration-300 hover:scale-105 glass-effect border border-red-500/30 hover:border-red-500/50 min-w-[160px] sm:min-w-[200px] cursor-pointer"
+            className="group px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-lato-regular text-sm sm:text-base transition-all duration-300 hover:scale-105 glass-effect border border-blue-500/30 hover:border-blue-500/50 min-w-[160px] sm:min-w-[200px] cursor-pointer"
             onClick={() => navigate('/about')}
           >
-            <span className="text-red-400 group-hover:text-red-300 flex items-center justify-center gap-2">
+            <span className="text-blue-400 group-hover:text-blue-300 flex items-center justify-center gap-2">
               More about me
               <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -56,10 +56,10 @@ const Home = () => {
           </button>
           
           <button
-            className="group px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-lato-regular text-sm sm:text-base transition-all duration-300 hover:scale-105 glass-effect border border-purple-500/30 hover:border-purple-500/50 min-w-[160px] sm:min-w-[200px] cursor-pointer"
+            className="group px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-lato-regular text-sm sm:text-base transition-all duration-300 hover:scale-105 glass-effect border border-teal-500/30 hover:border-teal-500/50 min-w-[160px] sm:min-w-[200px] cursor-pointer"
             onClick={() => navigate('/project')}
           >
-            <span className="text-purple-400 group-hover:text-purple-300 flex items-center justify-center gap-2">
+            <span className="text-teal-400 group-hover:text-teal-300 flex items-center justify-center gap-2">
               View Projects
               <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

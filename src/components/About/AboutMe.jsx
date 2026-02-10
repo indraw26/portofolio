@@ -8,13 +8,13 @@ const AboutMe = () => {
           About Me
         </span>
       </h2>
-      <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-red-500 to-purple-600 mx-auto mb-8 sm:mb-10 rounded-full"></div>
+      <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-blue-500 to-teal-400 mx-auto mb-8 sm:mb-10 rounded-full"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
         {/* Profile Image */}
         <div className="flex justify-center animate-[scaleIn_0.6s_ease-out_0.2s_backwards]">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-red-500 to-purple-600 rounded-2xl blur-sm opacity-50 group-hover:opacity-75 transition duration-300"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-teal-400 rounded-2xl blur-sm opacity-50 group-hover:opacity-75 transition duration-300"></div>
             <img 
               src={profile} 
               alt="Profile" 
@@ -26,7 +26,7 @@ const AboutMe = () => {
         {/* Bio Text */}
         <div className="text-left space-y-3 sm:space-y-4 animate-[slideUp_0.6s_ease-out_0.3s_backwards]">
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/90">
-            Hi, I'm <span className="font-semibold text-red-400">Indra</span> — a Software Engineer passionate about web
+            Hi, I'm <span className="font-semibold text-blue-400">Indra</span> — a Software Engineer passionate about web
             development, databases, and information systems.
           </p>
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/80">

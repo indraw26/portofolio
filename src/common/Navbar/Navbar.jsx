@@ -37,8 +37,8 @@ const Navbar = () => {
                   className={`
                     relative px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-lg cursor-pointer
                     transition-all duration-300 ease-in-out
-                    hover:bg-red-400/10
-                    ${active ? 'text-red-400' : 'text-white/90'}
+                    hover:bg-blue-400/10
+                    ${active ? 'text-blue-400' : 'text-white/90'}
                   `}
                   style={{
                     animation: `slideDown 0.5s ease-out ${index * 0.1}s backwards`
@@ -46,7 +46,7 @@ const Navbar = () => {
                 >
                   {item}
                   {active && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-500 to-purple-500 rounded-full"></span>
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full"></span>
                   )}
                 </button>
               );

@@ -2,46 +2,46 @@ const Skill = () => {
   const skillCategories = [
     {
       name: "Frontend",
-      skills: ["HTML", "CSS", "Javascript", "React.js"],
-      color: "red"
+      skills: ["HTML", "CSS", "Javascript", "React.js", "Vue.js"],
+      color: "blue"
     },
     {
       name: "Backend",
       skills: ["PHP", "Laravel", "Python", "Java"],
-      color: "purple"
+      color: "teal"
     },
     {
       name: "Mobile",
       skills: ["Flutter", "Dart"],
-      color: "pink"
+      color: "cyan"
     },
     {
       name: "Database",
-      skills: ["MySQL", "MongoDB"],
-      color: "violet"
+      skills: ["MySQL", "PostgreSQL","MongoDB"],
+      color: "sky"
     },
     {
       name: "CSS Frameworks",
       skills: ["Bootstrap", "Tailwind CSS"],
-      color: "fuchsia"
+      color: "indigo"
     }
   ];
 
   const colorClasses = {
-    red: "bg-red-400/10 text-red-400 border-red-400/30",
-    purple: "bg-purple-400/10 text-purple-400 border-purple-400/30",
-    pink: "bg-pink-400/10 text-pink-400 border-pink-400/30",
-    violet: "bg-violet-400/10 text-violet-400 border-violet-400/30",
-    fuchsia: "bg-fuchsia-400/10 text-fuchsia-400 border-fuchsia-400/30"
+    blue: "bg-blue-400/10 text-blue-400 border-blue-400/30",
+    teal: "bg-teal-400/10 text-teal-400 border-teal-400/30",
+    cyan: "bg-cyan-400/10 text-cyan-400 border-cyan-400/30",
+    sky: "bg-sky-400/10 text-sky-400 border-sky-400/30",
+    indigo: "bg-indigo-400/10 text-indigo-400 border-indigo-400/30"
   };
 
   return (
     <div className="text-white animate-[slideUp_0.6s_ease-out_0.3s_backwards]">
       <div className="mb-6 sm:mb-8">
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-purple-400">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-teal-400">
           Programming Skills
         </h3>
-        <div className="w-36 sm:w-44 h-1 bg-purple-400 mt-2 rounded-full"></div>
+        <div className="w-36 sm:w-44 h-1 bg-teal-400 mt-2 rounded-full"></div>
       </div>
       
       <div className="space-y-4 sm:space-y-6">
