@@ -3,12 +3,12 @@ import { ExternalLink } from 'lucide-react';
 const projectsData = {
   2024: [
     {
-      name: "AI Portfolio Generator",
-      description: "An intelligent portfolio builder using GPT-4 to create personalized developer portfolios with modern designs and animations.",
-      image_url: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop",
-      href_link: "https://example.com/ai-portfolio",
-      github_status: "1",
-      job: "Full Stack Developer"
+      name: "Spacepro",
+      description: "An variant of rent room application & ordering food and beverages.",
+      image_url: "/images/project/spacepro.png",
+      href_link: "https://spacepro.id",
+      github_status: "0",
+      job: "Frontend Developer"
     },
     {
       name: "Blockchain Voting System",
@@ -55,37 +55,17 @@ const projectsData = {
       job: "Full Stack Developer"
     }
   ],
-  2021: [
-    {
-      name: "Social Media Analytics",
-      description: "Advanced analytics platform for tracking social media performance across multiple platforms with AI insights.",
-      image_url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-      href_link: "https://example.com/social-analytics",
-      github_status: "0",
-      job: "Data Analyst"
-    },
-    {
-      name: "Fitness Tracking App",
-      description: "Comprehensive fitness tracker with workout plans, nutrition tracking, and progress visualization.",
-      image_url: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&auto=format&fit=crop",
-      href_link: "https://example.com/fitness-tracker",
-      github_status: "1",
-      job: "Mobile Developer"
-    }
-  ]
 };
 
 const ProjectCard = ({ project }) => {
   return (
     <div className="group relative glass-effect-dark rounded-2xl overflow-hidden smooth-transition hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer">
-      {/* Image Container */}
       <div className="relative h-48 overflow-hidden">
         <img 
           src={project.image_url} 
           alt={project.name}
           className="w-full h-full object-cover smooth-transition group-hover:scale-110"
         />
-        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/50 to-transparent"></div>
         
         {project.github_status === "1" && (
