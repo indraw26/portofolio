@@ -3,7 +3,6 @@
 @import "./custom-theme.css";
 
 :root {
-  /* Modern Elegant Palette */
   --elegant-navy: #0f172a;
   --elegant-slate: #1e293b;
   --elegant-blue: #3b82f6;
@@ -12,21 +11,17 @@
   --elegant-dark: #020617;
   --elegant-darker: #0a0f1e;
 
-  /* Elegant Gradients */
   --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   --gradient-secondary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
   --gradient-accent: linear-gradient(135deg, #fbbf24 0%, #3b82f6 100%);
 
-  /* Glass Effects */
   --glass-bg: rgba(15, 23, 42, 0.5);
   --glass-border: rgba(59, 130, 246, 0.2);
 
-  /* Elegant Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
 
-  /* Transitions */
   --transition-fast: 0.2s ease-in-out;
   --transition-normal: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
@@ -49,7 +44,6 @@ body {
   background: #020617;
 }
 
-/* Elegant Navy Gradient Background */
 body::before {
   content: "";
   position: fixed;
@@ -61,7 +55,6 @@ body::before {
   z-index: -2;
 }
 
-/* Ambient Blue-Teal Glow */
 body::after {
   content: "";
   position: fixed;
@@ -76,7 +69,6 @@ body::after {
   pointer-events: none;
 }
 
-/* Footer Icon Label Slide Animation - Desktop Only */
 @media (min-width: 640px) {
   .footer-icon-label {
     transform: translateY(10px);
@@ -90,7 +82,6 @@ body::after {
   }
 }
 
-/* Mobile - No animation, just show on hover */
 @media (max-width: 639px) {
   .footer-icon-label {
     display: none;

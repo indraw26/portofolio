@@ -10,7 +10,6 @@
   --animate-gradient: gradientShift 3s ease infinite;
 }
 
-/* Fade In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -21,7 +20,6 @@
   }
 }
 
-/* Slide Up Animation */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -34,7 +32,6 @@
   }
 }
 
-/* Slide Down Animation */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -47,7 +44,6 @@
   }
 }
 
-/* Slide Left Animation (for page transitions) */
 @keyframes slideLeft {
   from {
     opacity: 0;
@@ -60,7 +56,6 @@
   }
 }
 
-/* Slide Right Animation (for back navigation) */
 @keyframes slideRight {
   from {
     opacity: 0;
@@ -73,7 +68,6 @@
   }
 }
 
-/* Scale In Animation */
 @keyframes scaleIn {
   from {
     opacity: 0;
@@ -86,7 +80,6 @@
   }
 }
 
-/* Float Animation */
 @keyframes float {
 
   0%,
@@ -99,7 +92,6 @@
   }
 }
 
-/* Glow Pulse Animation */
 @keyframes glowPulse {
 
   0%,
@@ -112,7 +104,6 @@
   }
 }
 
-/* Animated Gradient Shift */
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -127,7 +118,6 @@
   }
 }
 
-/* Utility Classes */
 .glass-effect {
   background: rgba(15, 23, 42, 0.5);
   backdrop-filter: blur(12px);
@@ -151,7 +141,6 @@
   box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
 }
 
-/* Text Glow Effects */
 .text-glow-blue {
   text-shadow:
     0 0 10px rgba(59, 130, 246, 0.6),
@@ -164,7 +153,6 @@
     0 0 20px rgba(6, 182, 212, 0.3);
 }
 
-/* Animated Gradient Text */
 .animated-gradient {
   background: linear-gradient(90deg, #3b82f6, #06b6d4, #fbbf24, #3b82f6);
   background-size: 200% auto;

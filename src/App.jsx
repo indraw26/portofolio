@@ -44,10 +44,8 @@ function AnimatedRoutes() {
 
   return (
     <>
-      {/* Static Navbar - doesn't animate */}
       <Navbar />
       
-      {/* Animated Content Area */}
       <div className="relative" style={{ minHeight: 'calc(100vh - 140px)', paddingTop: '80px', paddingBottom: '60px' }}>
         <AnimatePresence mode="wait" custom={currentIndex}>
           <Routes location={location} key={location.pathname}>
@@ -78,7 +76,6 @@ function AnimatedRoutes() {
         </AnimatePresence>
       </div>
       
-      {/* Static Footer - doesn't animate */}
       <Footer />
     </>
   );
