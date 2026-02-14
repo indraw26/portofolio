@@ -9,18 +9,18 @@ const Maintance = () => {
 
   return (
     <div>
-      <div className="bg-white font-sans min-h-screen flex justify-center items-center">
+      <div className=" font-sans min-h-screen flex justify-center items-center">
         <main className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto px-8 py-16">
           <section>
-            <h1 className="text-7xl font-extrabold text-blue-900">Oops!</h1>
-            <h2 className="text-4xl font-bold text-gray-800 mt-2">
+            <h1 className="text-7xl font-extrabold text-blue-700">Oops!</h1>
+            <h2 className="text-4xl font-bold text-white mt-2">
               Under construction
             </h2>
-            <p className="text-gray-500 mt-4 min-w-md">
+            <p className="text-slate-200 mt-4 min-w-md">
               Website is still on construction.
             </p>
-            <button className="mt-6 px-6 py-3 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition" onClick={navigateToHome}>
-              BACK
+            <button className="mt-6 px-6 py-3 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition cursor-pointer" onClick={navigateToHome}>
+              Back
             </button>
           </section>
 

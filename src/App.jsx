@@ -5,6 +5,7 @@ import Footer from './common/Footer/Footer';
 import Home from './pages/home';
 import About from './pages/about';
 import Project from './pages/project';
+import Maintanance from './pages/maintance';
 
 const pageVariants = {
   initial: (direction) => ({
@@ -34,7 +35,7 @@ const pageVariants = {
 const routes = [
   { path: '/', element: Home, index: 0 },
   { path: '/about', element: About, index: 1 },
-  { path: '/project', element: Project, index: 2 },
+  { path: '/project', element:  Maintanance, index: 2 },
 ];
 
 function AnimatedRoutes() {
