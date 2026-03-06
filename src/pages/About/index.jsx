@@ -1,8 +1,8 @@
-import Bio from "../components/About/Bio";
-import AboutMe from "../components/About/AboutMe";
-import Skill from "../components/About/ProgrammingSkill";
+import Bio from "./About/Bio";
+import AboutMe from "./About/AboutMe";
+import Skill from "./About/ProgrammingSkill";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div className="container mx-auto flex items-center justify-center px-4 sm:px-6 my-20">
       <div className="max-w-7xl mx-auto glass-effect-dark rounded-3xl overflow-hidden animate-[fadeIn_0.8s_ease-out]">
@@ -18,4 +18,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

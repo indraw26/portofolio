@@ -3,8 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './common/Navbar/Navbar';
 import Footer from './common/Footer/Footer';
 import Home from './pages/home';
-import About from './pages/about';
-import Project from './pages/project';
+import AboutPage from './pages/About';
+import Project from './pages/Project';
 import Maintanance from './pages/maintance';
 
 const pageVariants = {
