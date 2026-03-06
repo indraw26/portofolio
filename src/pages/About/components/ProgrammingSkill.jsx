@@ -1,40 +1,6 @@
+import { skillCategories, colorClasses } from '../../../const/about/aboutData';
+
 const Skill = () => {
-  const skillCategories = [
-    {
-      name: "Frontend",
-      skills: ["HTML", "CSS", "Javascript", "React.js", "Vue.js"],
-      color: "blue"
-    },
-    {
-      name: "Backend",
-      skills: ["PHP", "Laravel", "Python", "Java"],
-      color: "teal"
-    },
-    {
-      name: "Mobile",
-      skills: ["Flutter", "Dart"],
-      color: "cyan"
-    },
-    {
-      name: "Database",
-      skills: ["MySQL", "PostgreSQL","MongoDB"],
-      color: "sky"
-    },
-    {
-      name: "CSS Frameworks",
-      skills: ["Bootstrap", "Tailwind CSS"],
-      color: "indigo"
-    }
-  ];
-
-  const colorClasses = {
-    blue: "bg-blue-400/10 text-blue-400 border-blue-400/30",
-    teal: "bg-teal-400/10 text-teal-400 border-teal-400/30",
-    cyan: "bg-cyan-400/10 text-cyan-400 border-cyan-400/30",
-    sky: "bg-sky-400/10 text-sky-400 border-sky-400/30",
-    indigo: "bg-indigo-400/10 text-indigo-400 border-indigo-400/30"
-  };
-
   return (
     <div className="text-white animate-[slideUp_0.6s_ease-out_0.3s_backwards]">
       <div className="mb-6 sm:mb-8">

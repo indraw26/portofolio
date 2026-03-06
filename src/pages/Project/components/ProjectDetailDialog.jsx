@@ -7,7 +7,6 @@ const ProjectDetailDialog = ({ project, isOpen, onClose }) => {
   return (
     <Dialog isOpen={isOpen} onClose={onClose} title={project.name}>
       <div className="space-y-6">
-        {/* Project Image */}
         <div className="relative h-64 md:h-80 rounded-xl overflow-hidden">
           <img 
             src={project.image_url} 
@@ -17,7 +16,6 @@ const ProjectDetailDialog = ({ project, isOpen, onClose }) => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/30 to-transparent"></div>
         </div>
 
-        {/* Job Role Badge */}
         <div className="flex items-center gap-3">
           <span className="text-sm font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-teal-400/20 text-blue-400 border border-blue-500/30">
             {project.job}
@@ -29,7 +27,6 @@ const ProjectDetailDialog = ({ project, isOpen, onClose }) => {
           )}
         </div>
 
-        {/* Full Description */}
         <div>
           <h3 className="text-lg font-bold text-white mb-3">About the Project</h3>
           <p className="text-white/80 leading-relaxed">
@@ -37,7 +34,6 @@ const ProjectDetailDialog = ({ project, isOpen, onClose }) => {
           </p>
         </div>
 
-        {/* Tech Stack */}
         <div>
           <h3 className="text-lg font-bold text-white mb-3">Tech Stack</h3>
           <div className="flex flex-wrap gap-2">
@@ -52,7 +48,6 @@ const ProjectDetailDialog = ({ project, isOpen, onClose }) => {
           </div>
         </div>
 
-        {/* Links */}
         <div className="flex flex-wrap gap-3 pt-4 border-t border-white/10">
           <a 
             href={project.href_link}

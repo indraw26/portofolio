@@ -1,35 +1,6 @@
+import { timelineData } from '../../../const/about/aboutData';
+
 const Bio = () => {
-  const skillInternRsup = ["Laravel", "Javascript", "Bootstrap 5", "MySQL"];
-
-  const timeline = [
-    {
-      year: "2004",
-      description: (
-        <>Born in <span className="text-blue-400 font-bold">Palembang, Indonesia</span></>
-      )
-    },
-    {
-      year: "2018-2021",
-      description: (
-        <>Graduate from <span className="text-blue-400 font-bold">YPI Tunas Bangsa Palembang Highschool</span>, with a major in <span className="text-blue-400 font-bold">social sciences</span></>
-      )
-    },
-    {
-      year: "2021–2025",
-      duration: "(3.5 years)",
-      description: (
-        <>Graduate with a bachelor degree in <span className="text-blue-400 font-bold">Information Systems</span> from <span className="text-blue-400 font-bold">University Multi Data Palembang</span></>
-      )
-    },
-    {
-      year: "2024, Feb - Juni",
-      description: (
-        <>Internship at <span className="text-blue-400 font-bold">RSUP dr. Mohammad Hoesin Palembang</span> as a <span className="text-blue-400 font-bold">Full Stack developer</span></>
-      ),
-      skills: skillInternRsup
-    }
-  ];
-
   return (
     <div className="text-white animate-[slideUp_0.6s_ease-out_0.2s_backwards]">
       <div className="mb-6 sm:mb-8">
@@ -40,7 +11,7 @@ const Bio = () => {
       </div>
 
       <div className="space-y-4 sm:space-y-6">
-        {timeline.map((item, index) => (
+        {timelineData.map((item, index) => (
           <div 
             key={index}
             className="grid grid-cols-1 sm:grid-cols-[180px_1fr] md:grid-cols-[200px_1fr] gap-3 sm:gap-4 group hover:bg-white/5 p-3 sm:p-4 rounded-lg transition-all duration-300"
