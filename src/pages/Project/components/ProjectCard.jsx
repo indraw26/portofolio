@@ -36,6 +36,22 @@ const ProjectCard = ({ project, onClick }) => {
           {project.short_description}
         </p>
 
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tech_stack.slice(0, 3).map((tech, index) => (
+            <span 
+              key={index}
+              className="text-[10px] font-medium px-2 py-1 rounded bg-white/5 text-white/70 border border-white/10"
+            >
+              {tech}
+            </span>
+          ))}
+          {project.tech_stack.length > 3 && (
+            <span className="text-[10px] font-medium px-2 py-1 rounded bg-white/5 text-white/50 border border-white/10">
+              +{project.tech_stack.length - 3}
+            </span>
+          )}
+        </div>
+
         <div className="inline-flex items-center gap-2 text-sm font-semibold text-white/80 group-hover:text-white smooth-transition">
           <span>View Details</span>
           <ExternalLink className="w-4 h-4 group-hover:translate-x-1 smooth-transition" />

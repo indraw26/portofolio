@@ -1,6 +1,6 @@
-import Bio from "./About/Bio";
-import AboutMe from "./About/AboutMe";
-import Skill from "./About/ProgrammingSkill";
+import Bio from "./components/Bio";
+import AboutMe from "./components/AboutMe";
+import Skill from "./components/ProgrammingSkill";
 
 const AboutPage = () => {
   return (

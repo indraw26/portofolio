@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ProjectCard from './components/ProjectCard';
 import ProjectDetailDialog from './components/ProjectDetailDialog';
-import { projectsData } from './constants';
+import { projectsData } from '../../const/project/projectData';
 
 const Project = () => {
   const [selectedProject, setSelectedProject] = useState(null);
