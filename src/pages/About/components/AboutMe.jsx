@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import profileUrl from "@assets/images/about.jpg";
 import { aboutMeData } from "../../../const/about/aboutData";
-
-const CACHE_KEY = "about_profile_image";
-const CACHE_TIME_KEY = "about_profile_image_time";
-const EXPIRATION_TIME = 15 * 60 * 1000; // 15 minutes
+import { CACHE_KEY, CACHE_TIME_KEY, EXPIRATION_TIME } from "../../../const/about/globalData";
 
 const AboutMe = () => {
   const [imageSrc, setImageSrc] = useState(profileUrl); // Default to URL while loading
